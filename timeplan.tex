@@ -1,0 +1,38 @@
+\documentclass{article}
+
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{colortbl}
+\usepackage{latexsym}
+\usepackage{framed}
+
+\begin{document}
+\include{calendarweek.tex}
+
+
+\begin{framed}
+    \centering
+    \resizebox{\textwidth}{!}{%
+        \begin{tabular}{l l}
+            \hline
+
+            % Put your Projects  & Hours here \\\hline
+
+            \rowcolor{blue!20}
+            Priority           & $\Box\Box$                                 \\ \hline\hline
+            project            & $\Box$                                     \\ \hline
+            \rowcolor{orange!40}
+            important section  & $\Box\Box\Box\Box\Box\Box\Box\Box\Box\Box$ \\ \hline
+            \rowcolor{orange!60}
+            Important Priority & $\Box$                                     \\ \hline\hline
+            \rowcolor{blue!20}
+            Selfcare           & $\Box\Box$                                 \\ \hline
+            Thesis             & $\Box\Box$                                 \\ \hline
+            Running out        & $\Box$                                     \\ \hline\hline
+            Of Examples        & $\Box\Box$                                 \\ \hline
+        \end{tabular}  }
+
+    \small{KW \calendarweek{\the\day}{\the\month}{\the\year} / \the\year}
+\end{framed}
+
+\end{document}
